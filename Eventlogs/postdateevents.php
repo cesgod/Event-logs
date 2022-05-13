@@ -5,7 +5,7 @@
   ?>
 			<?php  
 				
-				$commands = escapeshellcmd('/var/www/html/virtualenvs/Cl/EventLogs/req.py');
+				$commands = escapeshellcmd('/var/www/html/projects/Event-logs/virtualenvs/Cl/EventLogs/req.py');
 				$outputs = shell_exec($commands);
 				#echo "<pre>"; print_r($outputs); echo "</pre>";
 				#phpinfo();

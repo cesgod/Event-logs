@@ -12,7 +12,7 @@ import json
 #currentMonth = datetime.now().month
 
 
-with open('/var/www/html/Eventlogs/date/stereq.json', 'r') as f:
+with open('/var/www/html/projects/Event-logs/Eventlogs/date/stereq.json', 'r') as f:
     rangeib = json.load(f)
 nlim=len(rangeib)
 for i in range(nlim):
@@ -211,5 +211,5 @@ print("Total Remote Disconnection: ", dconn)
 #with open('/var/www/html/virtualenvs/Cl/EventLogs/doc_rconn.json', 'w', encoding='utf-8') as f:
 #    json.dump(allmtsr, f, ensure_ascii=False, indent=4)
 
-with open('/var/www/html/virtualenvs/Cl/EventLogs/doc_allconn.json', 'w', encoding='utf-8') as f:
+with open('/var/www/html/projects/Event-logs/virtualenvs/Cl/EventLogs/doc_allconn.json', 'w', encoding='utf-8') as f:
     json.dump(allmts, f, ensure_ascii=False, indent=4)

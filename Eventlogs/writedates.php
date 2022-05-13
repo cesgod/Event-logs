@@ -45,7 +45,7 @@
 	echo "<pre>"; print_r($range); echo "</pre>";
 	#echo json_encode($valores);
 
-	$fp = fopen('/var/www/html/Eventlogs/date/stereq.json', 'w');
+	$fp = fopen('/var/www/html/projects/Event-logs/Eventlogs/date/stereq.json', 'w');
 	fwrite($fp, json_encode($range));
 	fclose($fp);
 
